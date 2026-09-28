@@ -1,0 +1,23 @@
+[project]
+name = "e-commerce-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rohaib Nasir", email = "rohaibnasir92@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+e-commerce-automation = "e_commerce_automation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
